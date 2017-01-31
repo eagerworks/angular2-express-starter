@@ -1,0 +1,12 @@
+<div class="login">
+  <h1>Login</h1>
+  <div>
+    <input type="text" placeholder="Email" class="text-input" [(ngModel)]="user.email">
+  </div>
+  <div>
+    <input type="password" placeholder="Password" class="text-input" [(ngModel)]="user.password">
+  </div>
+  <div>
+    <button class="sign-in" (click)="signIn()">Sign In</button>
+  </div>
+<div>
