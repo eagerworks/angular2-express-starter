@@ -1,31 +1,71 @@
-# Angular2ExpressStarter
+<img height="50" src="https://angular.io/resources/images/logos/angular2/angular.svg" />
+<img height="50" src="https://nodejs.org/static/images/logos/nodejs-new-pantone-black.png" />
+<img height="50" src="https://camo.githubusercontent.com/fc61dcbdb7a6e49d3adecc12194b24ab20dfa25b/68747470733a2f2f692e636c6f756475702e636f6d2f7a6659366c4c376546612d3330303078333030302e706e67" />
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.26.
+# Angular 2 with Express starter project template. Heroku ready.
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Simple [Angular 2](https://angular.io/) starter project template, using [node.js](https://nodejs.org) with [express](http://expressjs.com/) as a server. Project base was generated using [angular-cli](https://github.com/angular/angular-cli). `angular-cli` is used on a development environment and `Express` for production. Heroku ready.
+You can try the live version [here](https://angular-2-express-starter.herokuapp.com).
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+Make sure you have `node` (and `npm`) installed on your system.
 
-## Build
+1. Clone this repository:
+  ```
+  git clone https://github.com/eagerworks/angular2-express-starter.git
+  ```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+2. Navigate to the project:
+  ```
+  cd angular2-express-starter
+  ```
 
-## Running unit tests
+2. Install [angular-cli](https://github.com/angular/angular-cli#installation), `typescript` and `typings` (typescript defintion manager):
+  ```
+  npm install angular-cli --global
+  npm install typescript --global
+  npm install typings --global
+  ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+3. Fill `package.json` with appropiate information about your project (name, version, description, etc.)
 
-## Running end-to-end tests
+4. Install packages:
+  ```
+  npm install
+  ```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+5. Run `ng serve` to start the server on a development environment
 
-## Deploying to GitHub Pages
+6. Navigate to `localhost:4200`
 
-Run `ng github-pages:deploy` to deploy to GitHub Pages.
+7. You are all set!
 
-## Further help
+## Deploying to heroku
 
-To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+This project uses an `Express` server for production environment, that lets you fine tune how the app is served. If you want to test it locally, run:
+```
+npm postinstall
+npm start
+```
+
+Take into account that the server forces an `https` redirection by default.
+
+## Notes
+An example service is included under `src/app/services/user_service.ts` that shows how to perform basic user authentication.
+Some minimal styles are shown for both global and component styling under `src/styles.scss` and `src/app/stylesheets` respectively.
+
+Express server is located under the `/server` folder. You can tune it to your specific needs. The server does an `https` redirection to force a secure connection, if you want to disable this behaviour just comment the `app.use(forceSSL());` line.
+
+Environment variables can be defined on `src/enviroments`. Update the files contained there accordingly, to point to your API endpoints.
+
+## Contributing
+Bug reports and pull requests are welcome
+
+1. Fork it ( https://github.com/eagerworks/angular2-express-starter/fork )
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create a new Pull Request
+
+This project was brought to you by [eagerWorks](http://www.eagerworks.com)
