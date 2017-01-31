@@ -4,7 +4,7 @@
 
 # Angular 2 with Express starter project template. Heroku ready.
 
-Simple [Angular 2](https://angular.io/) starter project template, using [node.js](https://nodejs.org) with [express](http://expressjs.com/) as a server. Project base was generated using [angular-cli](https://github.com/angular/angular-cli). `angular-cli` is used on a development environment and `Express` for production. Heroku ready.
+Simple [Angular 2](https://angular.io/) starter project template, uses [node.js](https://nodejs.org) with [express](http://expressjs.com/) as a server. Project base was generated using [angular-cli](https://github.com/angular/angular-cli). `angular-cli` is used for the development environment and `Express` for production. Heroku ready.
 You can try the live version [here](https://angular-2-express-starter.herokuapp.com).
 
 ## Installation
