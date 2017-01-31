@@ -41,6 +41,20 @@ Make sure you have `node` (and `npm`) installed on your system.
 
 7. You are all set!
 
+## Testing
+
+To run unit tests:
+```
+ng test
+```
+Unit tests are located under the `src/app/specs` folder.
+
+To run end-to-end tests:
+```
+ng e2e
+```
+End-to-end tests are located under the `e2e` folder.
+
 ## Deploying to heroku
 
 This project uses an `Express` server for production environment, that lets you fine tune how the app is served. If you want to test it locally, run:

@@ -7,8 +7,8 @@ describe('angular2-express-starter App', function() {
     page = new Angular2ExpressStarterPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display message saying login', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('Login');
   });
 });
